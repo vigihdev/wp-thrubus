@@ -1,0 +1,90 @@
+// vehicle.scss style
+
+// variables
+$vehicle-background: #fff;
+$vehicle-background-media: #f4f4f4;
+$vehicle-border: 1px solid #d2d2d2;
+
+// build
+.card--vehicle {
+    display: block;
+    position: relative;
+    margin-bottom: $getter;
+    margin-right: 16px;
+    flex: 0 0 calc((100% / 4) - 16px);
+    @include border-radius(8px);
+    @include elevation(4);
+    @include media-screen-min-max(xs, sm) {
+        flex: 0 0 calc((100% / 1) - 32px);
+        margin-left: 16px;
+    }
+    @include media-screen-min-max(sm, md) {
+        flex: 0 0 calc((100% / 2) - 32px);
+        margin-left: 16px;
+    }
+    background-color: $vehicle-background;
+    .card--vehicle-media {
+        @include border-top-radius(8px);
+        border-bottom: $vehicle-border;
+        background-color: $vehicle-background-media;
+
+        .vehicle-media-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .vehicle-media-img--square {
+            aspect-ratio: 1 / 1;
+        }
+
+        .vehicle-media-img--16-9 {
+            aspect-ratio: 16 / 9;
+        }
+
+        .vehicle-media-img--3-2 {
+            aspect-ratio: 3 / 2;
+        }
+    }
+    .card--vehicle-body {
+    }
+    .card--vehicle-content {
+        margin-bottom: 60px;
+        .vehicle-content-nama-mobil,
+        .vehicle-content-harga,
+        .vehicle-content-paket-sewa {
+            padding: 12px;
+            border-bottom: $vehicle-border;
+            @include last-child {
+                border-bottom: 0;
+            }
+        }
+
+        .vehicle-content-nama-mobil {
+            .text-label {
+                @include poppins-bold;
+                font-size: 1.1em;
+            }
+        }
+        .vehicle-content-harga {
+            .text-amount {
+                @include poppins-bold;
+                font-size: 1.2em;
+                color: #ff6500;
+            }
+        }
+        .vehicle-content-paket-sewa {
+            .text-paket-sewa {
+                color: #000000;
+            }
+        }
+    }
+    .card--vehicle-action {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .btn {
+            @include border-top-radius(0);
+            padding: 12px;
+        }
+    }
+}

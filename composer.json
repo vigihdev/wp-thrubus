@@ -1,0 +1,35 @@
+{
+    "name": "thrubus/wp-thrubus",
+    "description": "WordPress Thrubus Plugin",
+    "version": "1.0.1",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "vigih dev",
+            "email": "vigihdev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "yiisoft/arrays": "^3.0",
+        "yiisoft/html": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "WpThrubus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WpThrubus\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "server-example": "php -S localhost:3378 examples/index.php",
+        "server": "php -S localhost:3377 server.php"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}

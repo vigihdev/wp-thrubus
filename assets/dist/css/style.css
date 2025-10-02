@@ -1,0 +1,417 @@
+.card--vehicle {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  flex: 0 0 calc((100% / 4) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--vehicle {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--vehicle {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--vehicle .card--vehicle-media {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #f4f4f4;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img--square {
+  aspect-ratio: 1/1;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img--16-9 {
+  aspect-ratio: 16/9;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img--3-2 {
+  aspect-ratio: 3/2;
+}
+.card--vehicle .card--vehicle-content {
+  margin-bottom: 60px;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-nama-mobil,
+.card--vehicle .card--vehicle-content .vehicle-content-harga,
+.card--vehicle .card--vehicle-content .vehicle-content-paket-sewa {
+  padding: 12px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-nama-mobil:last-child,
+.card--vehicle .card--vehicle-content .vehicle-content-harga:last-child,
+.card--vehicle .card--vehicle-content .vehicle-content-paket-sewa:last-child {
+  border-bottom: 0;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-nama-mobil .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1em;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-harga .text-amount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  color: #ff6500;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-paket-sewa .text-paket-sewa {
+  color: #000000;
+}
+.card--vehicle .card--vehicle-action {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card--vehicle .card--vehicle-action .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 12px;
+}
+
+.card--vehicle-compact {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  flex: 0 0 calc((100% / 4) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--vehicle-compact {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--vehicle-compact {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--vehicle-compact .card--vehicle-compact-media {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #f4f4f4;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img--square {
+  aspect-ratio: 1/1;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img--16-9 {
+  aspect-ratio: 16/9;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img--3-2 {
+  aspect-ratio: 3/2;
+}
+.card--vehicle-compact .card--vehicle-compact-content {
+  margin-bottom: 60px;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-nama-mobil,
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group {
+  padding: 12px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-nama-mobil:last-child,
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group:last-child {
+  border-bottom: 0;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-nama-mobil .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1em;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group {
+  display: flex;
+  align-items: center;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group .text-amount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+  color: #ff6500;
+  flex: 0 0 auto;
+  padding-right: 8px;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group .text-paket-sewa {
+  color: #000000;
+  font-size: 80%;
+}
+.card--vehicle-compact .card--vehicle-compact-action {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card--vehicle-compact .card--vehicle-compact-action .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 12px;
+}
+
+.question-answer-root {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.card--question-answer {
+  padding: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background-color: #fff;
+}
+.card--question-answer .card-question .collapse-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card--question-answer .card-question .collapse-group .question-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+}
+.card--question-answer .card-question .collapse-group .material-icons-outlined {
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card--question-answer .card-answer {
+  margin-top: 16px;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 8px;
+  margin-left: 16px;
+}
+.card--question-answer .card-answer:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card--question-answer .card-answer .answer-text {
+  font-size: 90%;
+  margin-bottom: 8px;
+}
+.card--question-answer .card-answer .answer-group-text {
+  display: flex;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 12px;
+}
+.card--question-answer .card-answer .answer-group-text:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card--question-answer .card-answer .answer-group-text .answer-number {
+  color: #000;
+  flex: 0 0 16px;
+}
+
+.question .row.row-question {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #ffffff;
+  align-items: center;
+}
+.question .row.row-question .col-question-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.question .row.row-question .col-question-content .question-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.question .row.row-question .col-question-content .question-description {
+  font-size: 85%;
+  margin-bottom: 24px;
+}
+.card--review-customer {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  padding: 12px;
+  flex: 0 0 calc((100% / 2) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--review-customer {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--review-customer {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--review-customer .card--review-customer-header {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.card--review-customer .card--review-customer-header .review-customer-media {
+  margin-right: 8px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 3px solid #ffce0a;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img--square {
+  aspect-ratio: 1/1;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img--16-9 {
+  aspect-ratio: 16/9;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img--3-2 {
+  aspect-ratio: 3/2;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .username {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group {
+  display: flex;
+  align-items: center;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group .rating-star {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group .rating-star .material-icons-outlined {
+  font-size: 18px;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group .rating-number {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.card--review-customer .card--review-customer-content .text-content {
+  font-size: 90%;
+}
+
+.card--list-post-type {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  flex: 0 0 calc((100% / 3) - 16px);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--list-post-type {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--list-post-type {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--list-post-type .card--list-post-type-title,
+.card--list-post-type .card--list-post-type-content {
+  padding: 12px;
+}
+.card--list-post-type .card--list-post-type-media {
+  border-bottom: 1px solid #d2d2d2;
+}
+.card--list-post-type .card--list-post-type-media .list-post-type-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card--list-post-type .card--list-post-type-title {
+  border-bottom: 1px solid #d2d2d2;
+}
+.card--list-post-type .card--list-post-type-title .text-label {
+  font-size: 1.1em;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.card--list-post-type .card--list-post-type-content .text-content {
+  font-size: 95%;
+}
+
+.owl-carousel {
+  padding: 16px;
+  background: #eee;
+}
+.owl-carousel .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-carousel .owl-dots .owl-dot {
+  background: #b90000;
+  width: 16px;
+  height: 16px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: 4px;
+  -webkit-transition: border 0.3s ease-in-out;
+  -moz-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background: #ffce0a;
+  border: 3px solid #b90000;
+}
