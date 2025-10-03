@@ -6,6 +6,7 @@ namespace WpThrubus\Renderers;
 
 use WpThrubus\DTOs\VehicleCompactDto;
 use WpThrubus\DTOs\VehicleCompactHargaDto;
+use WpThrubus\DTOs\VehicleNotAvailableHargaDto;
 use Yiisoft\Html\Html;
 use Yiisoft\Arrays\ArrayHelper;
 
@@ -98,9 +99,19 @@ final class VehicleCompactRenderer extends BaseRenderer implements VehicleCompac
         $prefix = 'vehicle-content-';
         $contents = [];
         foreach ($vehicleHargas as $vehicle) {
+
+            $amount = null;
+            if ($vehicle instanceof VehicleCompactHargaDto) {
+                $amount = Html::span($vehicle->getHargaFormatted(), ['class' => 'text-amount']);
+            }
+
+            if ($vehicle instanceof VehicleNotAvailableHargaDto) {
+                $amount = Html::span($vehicle->getHarga(), ['class' => 'text-not-available']);
+            }
+
             $contents[] = implode('', [
                 Html::openTag('div', ['class' => $prefix . 'group']),
-                Html::span($vehicle->getHargaFormatted(), ['class' => 'text-amount']),
+                $amount,
                 Html::div($vehicle->getPaketSewa(), ['class' => 'text-paket-sewa']),
                 Html::closeTag('div'),
             ]);
