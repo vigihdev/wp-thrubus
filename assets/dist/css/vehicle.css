@@ -1,0 +1,170 @@
+.card--vehicle-compact {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  flex: 0 0 calc((100% / 4) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--vehicle-compact {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--vehicle-compact {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--vehicle-compact .card--vehicle-compact-media {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #f4f4f4;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img--square {
+  aspect-ratio: 1/1;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img--16-9 {
+  aspect-ratio: 16/9;
+}
+.card--vehicle-compact .card--vehicle-compact-media .vehicle-media-img--3-2 {
+  aspect-ratio: 3/2;
+}
+.card--vehicle-compact .card--vehicle-compact-content {
+  margin-bottom: 60px;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-nama-mobil,
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group {
+  padding: 12px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-nama-mobil:last-child,
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group:last-child {
+  border-bottom: 0;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-nama-mobil .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1em;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group {
+  display: flex;
+  align-items: center;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group .text-amount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+  color: #ff6500;
+  flex: 0 0 auto;
+  padding-right: 8px;
+}
+.card--vehicle-compact .card--vehicle-compact-content .vehicle-content-group .text-paket-sewa {
+  color: #000000;
+  font-size: 80%;
+}
+.card--vehicle-compact .card--vehicle-compact-action {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card--vehicle-compact .card--vehicle-compact-action .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 12px;
+}
+
+.card--vehicle {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  flex: 0 0 calc((100% / 4) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--vehicle {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--vehicle {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--vehicle .card--vehicle-media {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #f4f4f4;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img--square {
+  aspect-ratio: 1/1;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img--16-9 {
+  aspect-ratio: 16/9;
+}
+.card--vehicle .card--vehicle-media .vehicle-media-img--3-2 {
+  aspect-ratio: 3/2;
+}
+.card--vehicle .card--vehicle-content {
+  margin-bottom: 60px;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-nama-mobil,
+.card--vehicle .card--vehicle-content .vehicle-content-harga,
+.card--vehicle .card--vehicle-content .vehicle-content-paket-sewa {
+  padding: 12px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-nama-mobil:last-child,
+.card--vehicle .card--vehicle-content .vehicle-content-harga:last-child,
+.card--vehicle .card--vehicle-content .vehicle-content-paket-sewa:last-child {
+  border-bottom: 0;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-nama-mobil .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1em;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-harga .text-amount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  color: #ff6500;
+}
+.card--vehicle .card--vehicle-content .vehicle-content-paket-sewa .text-paket-sewa {
+  color: #000000;
+}
+.card--vehicle .card--vehicle-action {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card--vehicle .card--vehicle-action .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 12px;
+}
