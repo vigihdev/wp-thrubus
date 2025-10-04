@@ -39,8 +39,7 @@
                         }
                     }
                 })
-                console.log(carousel);
-
+                // console.log(carousel);
             })
         }
 
@@ -55,7 +54,6 @@
             }
         }
     }
-
     OwlCarousel.instance();
 
 })(jQuery);

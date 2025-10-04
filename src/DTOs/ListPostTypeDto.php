@@ -37,7 +37,7 @@ final class ListPostTypeDto extends BaseDto implements ListPostTypeContract
 
     public function getActionUrl(): string
     {
-        return $this->title;
+        return $this->actionUrl;
     }
 
     /**

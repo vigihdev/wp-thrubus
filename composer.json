@@ -13,7 +13,9 @@
     "require": {
         "php": ">=8.0",
         "yiisoft/arrays": "^3.0",
-        "yiisoft/html": "^3.11"
+        "yiisoft/html": "^3.11",
+        "symfony/serializer": "^6.4",
+        "symfony/property-access": "^6.4"
     },
     "autoload": {
         "psr-4": {
