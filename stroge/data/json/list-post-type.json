@@ -2,55 +2,55 @@
     {
         "title": "Sewa Mobil",
         "snippet": "Sewa Mobil Gannet Trans menyediakan berbagai pilihan mobil, dari mobil city car hingga mobil mewah, dengan harga sewa yang terjangkau dan layanan profesional untuk berbagai keperluan perjalanan.",
-        "imageUrl": "/images/layanan-kami/sewa-mobil.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/sewa-mobil.png",
         "actionUrl": ""
     },
     {
         "title": "Sewa Bus Pariwisata",
         "snippet": "Layanan sewa bus pariwisata dengan berbagai kapasitas untuk wisata keluarga, rombongan sekolah, atau acara perusahaan. Bus modern dengan AC dan fasilitas lengkap.",
-        "imageUrl": "/images/layanan-kami/sewa-bus-pariwisata.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/sewa-bus-pariwisata.png",
         "actionUrl": ""
     },
     {
         "title": "Paket Tour Wisata",
         "snippet": "Paket wisata lengkap ke destinasi menarik di Jawa Timur dan sekitarnya. Termasuk transportasi, guide, dan akomodasi dengan harga paket yang ekonomis.",
-        "imageUrl": "/images/layanan-kami/paket-tour-wisata.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/paket-tour-wisata.png",
         "actionUrl": ""
     },
     {
         "title": "Travel Shuttle",
         "snippet": "Layanan travel shuttle antar kota dengan jadwal reguler dan fleksibel. Armada nyaman, aman, dan tepat waktu untuk perjalanan bisnis maupun pribadi.",
-        "imageUrl": "/images/layanan-kami/travel-shuttle.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/travel-shuttle.png",
         "actionUrl": ""
     },
     {
         "title": "Sewa Truck",
         "snippet": "Sewa truck berbagai ukuran untuk keperluan logistik, pindahan, atau angkutan barang. Dilengkapi driver berpengalaman dan asuransi barang.",
-        "imageUrl": "/images/layanan-kami/sewa-truck.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/sewa-truck.png",
         "actionUrl": ""
     },
     {
         "title": "Jasa Ekspedisi Logistik",
         "snippet": "Layanan ekspedisi dan logistik terpercaya untuk pengiriman barang lokal maupun antar kota. Door to door service dengan tracking dan garansi keamanan.",
-        "imageUrl": "/images/layanan-kami/jasa-ekspedisi-logistik.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/jasa-ekspedisi-logistik.png",
         "actionUrl": ""
     },
     {
         "title": "Layanan Towing",
         "snippet": "Jasa derek dan towing 24 jam untuk kendaraan mogok atau kecelakaan. Tim siaga dengan peralatan modern dan response time cepat.",
-        "imageUrl": "/images/layanan-kami/towing.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/towing.png",
         "actionUrl": ""
     },
     {
         "title": "Sewa Alat Berat",
         "snippet": "Penyewaan alat berat untuk konstruksi, proyek infrastruktur, dan pertambangan. Excavator, bulldozer, crane dengan operator bersertifikat.",
-        "imageUrl": "/images/layanan-kami/sewa-alat-berat.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/sewa-alat-berat.png",
         "actionUrl": ""
     },
     {
         "title": "Umroh & Haji",
         "snippet": "Paket umroh dan haji dengan pelayanan terbaik. Bimbingan lengkap, akomodasi nyaman, dan pembimbing rohani berpengalaman untuk ibadah yang khusyuk.",
-        "imageUrl": "/images/layanan-kami/umroh-haji.png",
+        "imageUrl": "http://localhost:3378/site/assets/images/layanan-kami/umroh-haji.png",
         "actionUrl": ""
     }
 ]

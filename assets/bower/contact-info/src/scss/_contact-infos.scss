@@ -1,0 +1,29 @@
+// contact-infos.scss
+
+// variables
+
+.card--contact-info {
+}
+.contact-info {
+}
+
+.card--contact-info {
+    display: flex;
+    flex: 0 0 auto;
+    margin-right: 12px;
+    background-color: inherit;
+    @include media-screen-min-max(xs, sm) {
+    }
+    @include media-screen-min-max(sm, md) {
+    }
+    .card--contact-info-media {
+        .contact-info-image-media {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card--contact-info-content {
+    }
+}
+// .card--contact-info

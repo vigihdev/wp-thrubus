@@ -1,13 +1,65 @@
-.owl-carousel {
+.owl-carousel.owl-carousel-root {
   padding: 16px;
-  background: #eee;
+  background: inherit;
 }
-.owl-carousel .owl-dots {
+@media (min-width: 0) and (max-width: 576px) {
+  .owl-carousel.owl-carousel-root {
+    padding: 0;
+  }
+}
+.owl-carousel.owl-carousel-root .owl-nav .owl-prev,
+.owl-carousel.owl-carousel-root .owl-nav .owl-next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.owl-carousel.owl-carousel-root .owl-nav .owl-prev .material-icons-outlined,
+.owl-carousel.owl-carousel-root .owl-nav .owl-next .material-icons-outlined {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.owl-carousel.owl-carousel-root .owl-nav .owl-prev:hover,
+.owl-carousel.owl-carousel-root .owl-nav .owl-next:hover {
+  background-color: #b90000;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.owl-carousel.owl-carousel-root .owl-nav .owl-prev:hover .material-icons-outlined,
+.owl-carousel.owl-carousel-root .owl-nav .owl-next:hover .material-icons-outlined {
+  color: #fff;
+}
+.owl-carousel.owl-carousel-root .owl-nav .owl-next {
+  right: 30px;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .owl-carousel.owl-carousel-root .owl-nav .owl-next {
+    right: 0;
+  }
+}
+.owl-carousel.owl-carousel-root .owl-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.owl-carousel .owl-dots .owl-dot {
+.owl-carousel.owl-carousel-root .owl-dots .owl-dot {
   background: #b90000;
   width: 16px;
   height: 16px;
@@ -23,7 +75,7 @@
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-.owl-carousel .owl-dots .owl-dot.active {
+.owl-carousel.owl-carousel-root .owl-dots .owl-dot.active {
   background: #ffce0a;
   border: 3px solid #b90000;
 }

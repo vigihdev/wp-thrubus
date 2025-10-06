@@ -1,1 +1,87 @@
+.question-answer-root {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
 
+.card--question-answer {
+  padding: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background-color: #fff;
+}
+.card--question-answer .card-question .collapse-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card--question-answer .card-question .collapse-group .question-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+}
+.card--question-answer .card-question .collapse-group .material-icons-outlined {
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card--question-answer .card-answer {
+  margin-top: 16px;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 8px;
+  margin-left: 16px;
+}
+.card--question-answer .card-answer:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card--question-answer .card-answer .answer-text {
+  font-size: 90%;
+  margin-bottom: 8px;
+}
+.card--question-answer .card-answer .answer-group-text {
+  display: flex;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 12px;
+}
+.card--question-answer .card-answer .answer-group-text:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card--question-answer .card-answer .answer-group-text .answer-number {
+  color: #000;
+  flex: 0 0 16px;
+}
+
+.question .row.row-question {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #ffffff;
+  align-items: center;
+}
+.question .row.row-question .col-question-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.question .row.row-question .col-question-content .question-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.question .row.row-question .col-question-content .question-description {
+  font-size: 85%;
+  margin-bottom: 24px;
+}

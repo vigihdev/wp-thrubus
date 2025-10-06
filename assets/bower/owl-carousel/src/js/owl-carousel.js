@@ -1,8 +1,11 @@
 // OwlCarousel
+/// <reference types="jquery"/>
+/// <reference types="owlcarousel"/>
+
 (function ($) {
     "use strict";
     const TAG = 'OwlCarousel'
-    const SELECTOR = '.back-to-top-widget #back-to-top'
+    const SELECTOR = '.owl-carousel'
 
     /**
      * @param {CallableFunction} callback
@@ -16,44 +19,31 @@
         /** @type {JQuery<Element>} */
         element;
 
-        constructor() {
-            // console.log($.fn)
-            timeOut(1000, () => {
-                const carousel = $('.owl-carousel').owlCarousel({
-                    center: false,
-                    items: 2,
-                    loop: true,
-                    margin: 0,
-                    nav: false,
-                    dots: true,
-                    autoplay: true,
-                    // autoplayTimeout: 6000,
-                    // autoplaySpeed: 6000,
-                    // autoplayHoverPause: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        }
-                    }
-                })
-                // console.log(carousel);
+        constructor(element) {
+            timeOut(500, () => {
+                const $owl = $(element);
+                const options = $owl.data('options') ?? {};
+
+                /** @type {import("owlcarousel")} */
+                const $owlCarousel = $owl.owlCarousel(options)
+                console.log($owlCarousel.data())
             })
         }
-
 
         static validate() {
             return $(SELECTOR).length > 0;
         }
 
         static instance() {
-            new OwlCarousel()
             if (OwlCarousel.validate()) {
+                $('body').find(SELECTOR).each((i, element) => {
+                    new OwlCarousel(element)
+                })
             }
         }
     }
-    OwlCarousel.instance();
+    timeOut(500, () => {
+        OwlCarousel.instance();
+    })
 
 })(jQuery);

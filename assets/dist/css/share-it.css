@@ -1,0 +1,26 @@
+.card--share-it.facebook {
+  background-color: #1877f2;
+}
+.card--share-it.twitter {
+  background-color: #1da1f2;
+}
+.card--share-it.instagram {
+  background-color: #f00073;
+}
+.card--share-it.pinterest {
+  background-color: #e60023;
+}
+.card--share-it.whatsapp {
+  background-color: #25d366;
+}
+
+.card--share-it {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}

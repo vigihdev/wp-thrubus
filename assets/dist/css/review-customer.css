@@ -1,1 +1,79 @@
-
+.card--review-customer {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  padding: 12px;
+  flex: 0 0 calc((100% / 2) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--review-customer {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--review-customer {
+    flex: 0 0 calc((100% / 2) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--review-customer .card--review-customer-header {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.card--review-customer .card--review-customer-header .review-customer-media {
+  margin-right: 8px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 3px solid #ffce0a;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img--square {
+  aspect-ratio: 1/1;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img--16-9 {
+  aspect-ratio: 16/9;
+}
+.card--review-customer .card--review-customer-header .review-customer-media .review-customer-media-img--3-2 {
+  aspect-ratio: 3/2;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .username {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group {
+  display: flex;
+  align-items: center;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group .rating-star {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group .rating-star .material-icons-outlined {
+  font-size: 18px;
+}
+.card--review-customer .card--review-customer-header .review-customer-profile .rating-group .rating-number {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.card--review-customer .card--review-customer-content .text-content {
+  font-size: 90%;
+}

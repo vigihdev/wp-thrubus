@@ -7,13 +7,59 @@ $owl-dot-width: 16px;
 .card--owl-carousel {
 }
 
-.owl-carousel {
+.owl-carousel.owl-carousel-root {
     padding: $getter;
-    background: #eee;
+    background: inherit;
+    @include media-screen-min-max(xs, sm) {
+        padding: 0;
+    }
+    @include media-screen-min-max(sm, md) {
+    }
     .owl-stage-outer {
     }
 
     .owl-nav {
+        // width: calc(100% - 20px);
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include transform-translateY(-50%);
+            @include border-radius(50%);
+            @include transitions(background-color, 0.3s);
+
+            .material-icons-outlined {
+                font-size: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #666;
+                @include transitions(color, 0.3s);
+            }
+
+            @include hover {
+                background-color: $primary;
+                @include BoxShadow(2);
+                .material-icons-outlined {
+                    color: #fff;
+                }
+            }
+        }
+        .owl-prev {
+        }
+        .owl-next {
+            right: 30px;
+            @include media-screen-min-max(xs, sm) {
+                right: 0;
+            }
+            @include media-screen-min-max(sm, md) {
+            }
+        }
     }
 
     .owl-dots {

@@ -1,0 +1,39 @@
+// sharet-it.scss
+
+// variables
+$card--sharet-it-width: 36px;
+$card--sharet-it-height: 36px;
+
+.card--share-it {
+    &.facebook {
+        background-color: #1877f2;
+    }
+    &.twitter {
+        background-color: #1da1f2;
+    }
+    &.instagram {
+        background-color: #f00073;
+    }
+    &.pinterest {
+        background-color: #e60023;
+    }
+    &.whatsapp {
+        background-color: #25d366;
+    }
+}
+.card--share-it {
+    width: $card--sharet-it-width;
+    height: $card--sharet-it-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    @include BoxShadow(1);
+    @include border-radius(4px);
+    .card--share-it-media {
+        .share-it-image-media {
+        }
+    }
+    .card--share-it-content {
+    }
+}

@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace WpThrubus\Contracts;
+namespace WpThrubus\Contracts\OwlCarousel;
 
 interface OwlCarouselContract {}

@@ -1,0 +1,91 @@
+// whatsapp-popup.scss style
+
+// variables
+
+// style
+.card--whatsapp-popup {
+    @include BoxShadow(2);
+    @include border-radius(8px);
+    max-width: 320px;
+    width: 100%;
+    .whatsapp-popup-title {
+        padding: 8px;
+        background-color: $success;
+        @include BoxShadow(1);
+        @include border-top-radius(8px);
+
+        .text-title {
+            text-align: center;
+            color: #000;
+        }
+    }
+
+    .whatsapp-popup-item-group {
+        padding: 8px;
+        display: block;
+        position: relative;
+        background-color: #fff;
+        @include border-bottom-radius(8px);
+
+        .whatsapp-popup-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d7d7d7;
+            @include last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+            .item-media {
+                flex: 0 0 65px;
+                height: 65px;
+                margin-right: 8px;
+                position: relative;
+                @include border-radius(8px);
+                .img-media {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    @include border-radius(8px);
+                    @include BoxShadow(2);
+                }
+                .circle-online {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background-color: $success;
+                    @include border-radius(50%);
+                    @include size(10px);
+                    @include BoxShadow(2);
+                }
+            }
+
+            .item-content {
+                flex: auto;
+                display: flex;
+                flex-direction: column;
+                .username {
+                    @include poppins-bold;
+                    font-size: 1em;
+                }
+
+                .no-hp {
+                    color: #8c8c8c;
+                }
+            }
+        }
+    }
+}
+
+// $theme-colors
+@each $theme, $value in $theme-colors {
+    .card--whatsapp-popup.whatsapp-popup-#{$theme} {
+        .whatsapp-popup-title {
+            background-color: $value;
+            .text-title {
+                color: color-yiq($value);
+            }
+        }
+    }
+}

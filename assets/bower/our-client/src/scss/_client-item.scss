@@ -1,0 +1,41 @@
+// our-client.scss style
+
+.hidden-scroll {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}
+
+// variables
+$card--our-client-width: 180px;
+$card--our-client-height: 110px;
+.card--our-client {
+    display: flex;
+    position: relative;
+    margin-bottom: $getter;
+    margin-right: 16px;
+    width: $card--our-client-width;
+    height: $card--our-client-height;
+    background-color: #fff;
+    flex: 0 0 $card--our-client-width;
+    @include border-radius(8px);
+    @include elevation(6);
+    @include media-screen-min-max(xs, sm) {
+    }
+    @include media-screen-min-max(sm, md) {
+    }
+    .card--our-client-media {
+        .our-client-image-media {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+    }
+    .card--our-client-content {
+    }
+}
