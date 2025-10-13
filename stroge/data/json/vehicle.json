@@ -1,0 +1,66 @@
+[
+    {
+        "nama": "Avanza",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/all-new-avanza.png",
+        "harga": 800000,
+        "paketSewa": "Layanan Mobil Driver BBM",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Ertiga New",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/all-new-ertiga.png",
+        "harga": 800000,
+        "paketSewa": "Mobil Driver BBM",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Calya",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/calya.png",
+        "harga": 800000,
+        "paketSewa": "Mobil Driver BBM",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Xenia",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/xenia.png",
+        "harga": 800000,
+        "paketSewa": "Mobil Driver BBM",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Terios",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/terios.png",
+        "harga": 800000,
+        "paketSewa": "Lepas Kunci",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Serena",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/serena.png",
+        "harga": 800000,
+        "paketSewa": "Dropoff Mobil Driver BBM",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Xpander",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/xpander.png",
+        "harga": 800000,
+        "paketSewa": "Lepas Kunci",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    },
+    {
+        "nama": "Sigra",
+        "image": "http://localhost:3378/site/assets/catalog/mobil/minibus/sigra.png",
+        "harga": 800000,
+        "paketSewa": "Lepas Kunci",
+        "tipeMobil": "Toyota",
+        "actionUrl": ""
+    }
+]

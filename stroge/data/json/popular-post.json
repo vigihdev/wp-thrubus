@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Sewa Alphard Mewah",
+        "snippet": "Toyota Alphard pilihan favorit untuk acara pernikahan dan korporat dengan interior mewah.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-1.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Rental Innova Reborn",
+        "snippet": "Mobil keluarga terpopuler untuk perjalanan dalam dan luar kota yang nyaman.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-2.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Bus Medium 30 Seat",
+        "snippet": "Bus medium untuk rombongan kantor, sekolah, atau wisata dengan fasilitas AC dan audio.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-3.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Promo Sewa Mobil Lebaran",
+        "snippet": "Paket spesial sewa mobil untuk mudik lebaran dengan harga terjangkau dan unit terjamin.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-4.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Rental Fortuner VRZ",
+        "snippet": "SUV tangguh dan mewah untuk perjalanan adventure atau keperluan bisnis.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-5.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Elf Long untuk Ziarah",
+        "snippet": "Elf Long nyaman untuk perjalanan ziarah wali songo atau wisata religi lainnya.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-6.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Paket Wedding Car Surabaya",
+        "snippet": "Berbagai pilihan mobil pengantin dari klasik hingga modern untuk hari istimewa.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-7.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Avanza Xenia Murah",
+        "snippet": "Mobil ekonomis paling laris untuk kebutuhan sehari-hari dan perjalanan keluarga.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-8.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Rental Pajero Sport Diesel",
+        "snippet": "SUV premium dengan mesin diesel yang irit dan bertenaga untuk segala medan.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-9.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Bus Big Bus Pariwisata",
+        "snippet": "Bus besar kapasitas 50+ seat dengan fasilitas lengkap untuk wisata jarak jauh.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-10.jpg",
+        "actionUrl": ""
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Sewa Mobil Paling Murah",
+        "snippet": "Okkarent adalah perusahaan sewa mobil dan bus terbesar di Surabaya dengan berbagai pilihan kendaraan.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-1.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Tips Memilih Rental Mobil",
+        "snippet": "Panduan lengkap memilih jasa rental mobil yang tepat untuk kebutuhan perjalanan Anda.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-2.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Harga Sewa Bus Pariwisata",
+        "snippet": "Daftar harga sewa bus pariwisata untuk berbagai keperluan acara dan perjalanan wisata.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-3.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Mobil Lepas Kunci",
+        "snippet": "Layanan sewa mobil lepas kunci dengan harga terjangkau dan proses mudah.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-4.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Paket Wisata Surabaya",
+        "snippet": "Paket wisata keliling Surabaya dengan mobil dan driver berpengalaman.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-5.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Mobil untuk Wedding",
+        "snippet": "Koleksi mobil pengantin mewah untuk hari pernikahan yang berkesan.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-6.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Rental Mobil Bulanan Hemat",
+        "snippet": "Promo sewa mobil bulanan dengan harga spesial dan berbagai keuntungan.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-7.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Syarat Sewa Mobil",
+        "snippet": "Informasi lengkap persyaratan dan dokumen yang dibutuhkan untuk menyewa mobil.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-8.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Mobil Terbaru 2024",
+        "snippet": "Koleksi mobil terbaru tahun 2024 yang tersedia untuk disewa dengan kondisi prima.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-9.jpg",
+        "actionUrl": ""
+    },
+    {
+        "title": "Sewa Hiace untuk Rombongan",
+        "snippet": "Sewa Toyota Hiace untuk perjalanan rombongan dengan kapasitas hingga 15 orang.",
+        "imageUrl": "http://localhost:3378/site/assets/images/image-10.jpg",
+        "actionUrl": ""
+    }
+]

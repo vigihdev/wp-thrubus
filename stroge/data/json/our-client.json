@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Adhibeton",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/adhibeton.png"
+    },
+    {
+        "name": "Astra International",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/astra-international.png"
+    },
+    {
+        "name": "Dishub Surabaya",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/dishub-surabaya.png"
+    },
+    {
+        "name": "Migas Gresik",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/migas-gresik.png"
+    },
+    {
+        "name": "Minarak",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/minarak.png"
+    },
+    {
+        "name": "Pal",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/pal.png"
+    },
+    {
+        "name": "Pertamina",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/pertamina.png"
+    },
+    {
+        "name": "Petrokimia",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/petrokimia.png"
+    },
+    {
+        "name": "Pon Papua",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/pon-papua.png"
+    },
+    {
+        "name": "Samator",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/samator.png"
+    },
+    {
+        "name": "Smga",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/smga.png"
+    },
+    {
+        "name": "Telkom Indonesia",
+        "imageUrl": "http://localhost:3378/site/assets/images/our-clients/telkom-Indonesia.png"
+    }
+]

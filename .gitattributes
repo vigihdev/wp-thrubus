@@ -13,4 +13,6 @@
 /server.php export-ignore
 /examples export-ignore
 /node export-ignore
+/Gemini.md export-ignore
+/GEMINI.md export-ignore
 /jsconfig.json export-ignore

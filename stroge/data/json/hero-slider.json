@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Hero 1",
+        "imageUrl": "http://localhost:3378/site/assets/images/hero-slider/hero-1.png"
+    },
+    {
+        "name": "Hero 3",
+        "imageUrl": "http://localhost:3378/site/assets/images/hero-slider/hero-3.png"
+    },
+    {
+        "name": "Hero 4",
+        "imageUrl": "http://localhost:3378/site/assets/images/hero-slider/hero-4.png"
+    },
+    {
+        "name": "Hero 5",
+        "imageUrl": "http://localhost:3378/site/assets/images/hero-slider/hero-5.png"
+    },
+    {
+        "name": "Hero 7",
+        "imageUrl": "http://localhost:3378/site/assets/images/hero-slider/hero-7.png"
+    },
+    {
+        "name": "Hero 8",
+        "imageUrl": "http://localhost:3378/site/assets/images/hero-slider/hero-8.png"
+    }
+]

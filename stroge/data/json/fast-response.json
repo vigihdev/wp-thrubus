@@ -1,0 +1,26 @@
+[
+    {
+        "fastValue": "0821 3131 000 76",
+        "fastType": "whatsapp",
+        "iconUrl": "http://localhost:3378/site/assets/images/fast-response/whatsapp.png",
+        "actionUrl": "https://wa.me/6282131310076?text=Hallo%20Word"
+    },
+    {
+        "fastValue": "0821 3131 000 76",
+        "fastType": "whatsapp",
+        "iconUrl": "http://localhost:3378/site/assets/images/fast-response/whatsapp.png",
+        "actionUrl": "https://wa.me/6282131310076?text=Hallo%20Word"
+    },
+    {
+        "fastValue": "email@gmail.com",
+        "fastType": "email",
+        "iconUrl": "http://localhost:3378/site/assets/images/fast-response/email.png",
+        "actionUrl": "mailto:email@gmail.com"
+    },
+    {
+        "fastValue": "0821 3131 000 76",
+        "fastType": "phone",
+        "iconUrl": "http://localhost:3378/site/assets/images/fast-response/phone.png",
+        "actionUrl": "tel:+6282131310076"
+    }
+]
