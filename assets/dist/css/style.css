@@ -457,7 +457,7 @@
   align-items: center;
   justify-content: center;
 }
-.owl-carousel.owl-carousel-root .owl-dots .owl-dot {
+.owl-carousel.owl-carousel-root .owl-dots .owl-dot span {
   background: #b90000;
   width: 16px;
   height: 16px;
@@ -473,9 +473,14 @@
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-.owl-carousel.owl-carousel-root .owl-dots .owl-dot.active {
+.owl-carousel.owl-carousel-root .owl-dots .owl-dot.active span {
   background: #ffce0a;
   border: 3px solid #b90000;
+}
+
+.share-it-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card--share-it.facebook {
@@ -500,9 +505,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 4px;
+  margin-right: 8px;
+  margin-bottom: 12px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  -webkit-transition: border 0.5s ease-in-out;
+  -moz-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+}
+.card--share-it:hover {
+  border: 3px solid #ffce0a;
+}
+.share-it-wrapper.share-it-circle .card--share-it {
+  border-radius: 50%;
 }
 
 .card--whatsapp-popup {
@@ -636,16 +652,83 @@
   color: #fff;
 }
 
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.contact-info-wrapper .card--contact-info:last-child {
+  margin-bottom: 0;
+}
+
 .card--contact-info {
   display: flex;
   flex: 0 0 auto;
+  margin-bottom: 12px;
+  padding-bottom: 4px;
+  align-items: center;
+}
+.card--contact-info .card--contact-info-media {
+  padding: 8px;
   margin-right: 12px;
-  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 .card--contact-info .card--contact-info-media .contact-info-image-media {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+.card--contact-info .card--contact-info-content .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card--contact-info.phone .card--contact-info-media, .card--contact-info.email .card--contact-info-media {
+  background-color: #fff;
+}
+
+.card--contact-info.whatsapp .card--contact-info-media {
+  background-color: #25d366;
+}
+
+.contact-info-wrapper.contact-info--primary .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--secondary .card--contact-info .card--contact-info-content .text-label {
+  color: #212529;
+}
+
+.contact-info-wrapper.contact-info--success .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--info .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--warning .card--contact-info .card--contact-info-content .text-label {
+  color: #212529;
+}
+
+.contact-info-wrapper.contact-info--danger .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--light .card--contact-info .card--contact-info-content .text-label {
+  color: #212529;
+}
+
+.contact-info-wrapper.contact-info--dark .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
 }
 
 .fast-response-wrapper {
@@ -660,6 +743,9 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.fast-response-wrapper .card--fast-response:last-child {
+  margin-bottom: 0;
+}
 
 .card--fast-response {
   display: flex;
@@ -669,22 +755,29 @@
   align-items: center;
 }
 .card--fast-response .card--fast-response-media {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  padding: 8px;
+  margin-right: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  padding: 6px;
-  margin-right: 12px;
 }
 .card--fast-response .card--fast-response-media .fast-response-image-media {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .card--fast-response .card--fast-response-content .text-label {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.card--fast-response.phone .card--fast-response-media, .card--fast-response.email .card--fast-response-media {
+  background-color: #fff;
 }
 
 .card--fast-response.whatsapp .card--fast-response-media {
@@ -756,4 +849,212 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--recent-post {
+  display: flex;
+  margin-bottom: 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+.card--recent-post .card--recent-post-media {
+  flex: 0 0 120px;
+}
+.card--recent-post .card--recent-post-media .recent-post-image-media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.card--recent-post .card--recent-post-content {
+  padding: 8px;
+}
+.card--recent-post .card--recent-post-content .recent-post-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.card--recent-post .card--recent-post-content .recent-post-snippet {
+  font-size: 85%;
+  display: none;
+}
+
+.random-post-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .random-post-wrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .random-post-wrapper {
+    flex-direction: unset;
+  }
+}
+.card--random-post {
+  display: flex;
+  margin-bottom: 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--random-post {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--random-post {
+    flex-direction: column;
+    flex: 0 0 calc((100% / 2) - 16px);
+    margin-right: 16px;
+  }
+}
+.card--random-post .card--random-post-media {
+  flex: 0 0 140px;
+}
+.card--random-post .card--random-post-media .random-post-image-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--random-post .card--random-post-media .random-post-image-media {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card--random-post .card--random-post-media .random-post-image-media {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+.card--random-post .card--random-post-content {
+  padding: 16px;
+}
+.card--random-post .card--random-post-content .random-post-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+.card--random-post .card--random-post-content .random-post-snippet {
+  font-size: 85%;
+}
+
+.related-post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: inherit;
+  align-content: baseline;
+}
+
+.card--related-post {
+  margin-bottom: 16px;
+  background-color: #fff;
+  margin-right: 16px;
+  flex: 0 0 calc((100% / 3) - 16px);
+  border-radius: 8px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .card--related-post {
+    flex: 0 0 calc((100% / 1) - 32px);
+    margin-left: 16px;
+  }
+}
+.card--related-post .card--related-post-media .related-post-image-media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card--related-post .card--related-post-content {
+  padding: 16px;
+}
+.card--related-post .card--related-post-content .related-post-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+.card--related-post .card--related-post-content .related-post-snippet {
+  font-size: 85%;
+}
+
+.widget-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.widget-title.widget-title-border {
+  padding-bottom: 16px;
+}
+.widget-title.widget-title-border .widget-title--main {
+  position: absolute;
+  bottom: 8px;
+  width: 60px;
+  border-bottom: 4px solid #ffce0a;
+}
+.widget-title.widget-title-background {
+  align-items: center;
+  justify-content: center;
+}
+.widget-title.widget-title-background .widget-title--main {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-bottom: 3px solid #ffce0a;
+  z-index: -1;
+  width: 100%;
+}
+.widget-title.widget-title-background .text-label {
+  padding: 8px 16px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  background-color: #b90000;
+}
+.widget-title.widget-title-box {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -16px;
+  z-index: 1;
+}
+.widget-title.widget-title-box .widget-title--main {
+  display: none;
+}
+.widget-title.widget-title-box .text-label {
+  padding: 8px 16px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  background-color: #b90000;
+}
+.widget-title .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: capitalize;
+  width: max-content;
+}
+
+.widget-title--connect-with-us .text-label,
+.widget-title--contact-info .text-label {
+  color: #fff;
 }

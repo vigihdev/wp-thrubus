@@ -1,11 +1,78 @@
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.contact-info-wrapper .card--contact-info:last-child {
+  margin-bottom: 0;
+}
+
 .card--contact-info {
   display: flex;
   flex: 0 0 auto;
+  margin-bottom: 12px;
+  padding-bottom: 4px;
+  align-items: center;
+}
+.card--contact-info .card--contact-info-media {
+  padding: 8px;
   margin-right: 12px;
-  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 .card--contact-info .card--contact-info-media .contact-info-image-media {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+.card--contact-info .card--contact-info-content .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card--contact-info.phone .card--contact-info-media, .card--contact-info.email .card--contact-info-media {
+  background-color: #fff;
+}
+
+.card--contact-info.whatsapp .card--contact-info-media {
+  background-color: #25d366;
+}
+
+.contact-info-wrapper.contact-info--primary .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--secondary .card--contact-info .card--contact-info-content .text-label {
+  color: #212529;
+}
+
+.contact-info-wrapper.contact-info--success .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--info .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--warning .card--contact-info .card--contact-info-content .text-label {
+  color: #212529;
+}
+
+.contact-info-wrapper.contact-info--danger .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
+}
+
+.contact-info-wrapper.contact-info--light .card--contact-info .card--contact-info-content .text-label {
+  color: #212529;
+}
+
+.contact-info-wrapper.contact-info--dark .card--contact-info .card--contact-info-content .text-label {
+  color: #fff;
 }

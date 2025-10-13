@@ -1,0 +1,32 @@
+// recent-post.scss style
+
+// variables
+// style
+.card--recent-post {
+    display: flex;
+    margin-bottom: $getter;
+    background-color: #fff;
+    @include elevation(4);
+    @include border-radius(8px);
+    .card--recent-post-media {
+        flex: 0 0 120px;
+        .recent-post-image-media {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            @include border-left-radius(8px);
+        }
+    }
+
+    .card--recent-post-content {
+        padding: 8px;
+        .recent-post-title {
+            @include poppins-bold;
+        }
+
+        .recent-post-snippet {
+            font-size: 85%;
+            display: none;
+        }
+    }
+}

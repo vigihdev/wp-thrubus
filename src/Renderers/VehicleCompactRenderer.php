@@ -70,8 +70,16 @@ final class VehicleCompactRenderer extends BaseRenderer implements VehicleCompac
             }
         }
 
+        $content = implode('', $itemsHtml);
+
+        if (empty($this->wrapperOptions)) {
+            return $content;
+        }
+
         return implode('', [
-            implode('', $itemsHtml),
+            Html::openTag('div', $this->wrapperOptions),
+            $content,
+            Html::closeTag('div'),
         ]);
     }
 

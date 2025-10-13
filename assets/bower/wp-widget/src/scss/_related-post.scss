@@ -1,0 +1,44 @@
+// related-post.scss style
+
+// variables
+// style
+.related-post-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: inherit;
+    align-content: baseline;
+}
+.card--related-post {
+    margin-bottom: $getter;
+    background-color: #fff;
+    margin-right: 16px;
+    flex: 0 0 calc((100% / 3) - 16px);
+    @include border-radius(8px);
+    @include elevation(2);
+    @include media-screen-min-max(xs, sm) {
+        flex: 0 0 calc((100% / 1) - 32px);
+        margin-left: 16px;
+    }
+    @include media-screen-min-max(sm, md) {
+    }
+    .card--related-post-media {
+        .related-post-image-media {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            @include border-top-radius(8px);
+        }
+    }
+
+    .card--related-post-content {
+        padding: $getter;
+        .related-post-title {
+            @include poppins-bold;
+            margin-bottom: 8px;
+        }
+
+        .related-post-snippet {
+            font-size: 85%;
+        }
+    }
+}

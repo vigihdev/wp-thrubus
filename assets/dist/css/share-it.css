@@ -1,3 +1,8 @@
+.share-it-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card--share-it.facebook {
   background-color: #1877f2;
 }
@@ -20,7 +25,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 4px;
+  margin-right: 8px;
+  margin-bottom: 12px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  -webkit-transition: border 0.5s ease-in-out;
+  -moz-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+}
+.card--share-it:hover {
+  border: 3px solid #ffce0a;
+}
+.share-it-wrapper.share-it-circle .card--share-it {
+  border-radius: 50%;
 }

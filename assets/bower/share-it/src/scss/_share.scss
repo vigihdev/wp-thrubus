@@ -4,6 +4,11 @@
 $card--sharet-it-width: 36px;
 $card--sharet-it-height: 36px;
 
+.share-it-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card--share-it {
     &.facebook {
         background-color: #1877f2;
@@ -27,13 +32,35 @@ $card--sharet-it-height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 4px;
+    margin-right: 8px;
+    margin-bottom: 12px;
     @include BoxShadow(1);
     @include border-radius(4px);
+    @include transitions(border, 0.5s);
+    @include hover {
+        border: 3px solid $secondary;
+    }
+
     .card--share-it-media {
         .share-it-image-media {
         }
     }
     .card--share-it-content {
     }
+}
+
+// theme
+.share-it-wrapper {
+    &.share-it-circle {
+        .card--share-it {
+            @include border-radius(50%);
+        }
+    }
+    &.share-it-box {
+    }
+}
+
+// Colors
+@each $name in $share-it-theme-model {
+    // @debug $name;
 }

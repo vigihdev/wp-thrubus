@@ -10,6 +10,9 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.fast-response-wrapper .card--fast-response:last-child {
+  margin-bottom: 0;
+}
 
 .card--fast-response {
   display: flex;
@@ -19,22 +22,29 @@
   align-items: center;
 }
 .card--fast-response .card--fast-response-media {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  padding: 8px;
+  margin-right: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  padding: 6px;
-  margin-right: 12px;
 }
 .card--fast-response .card--fast-response-media .fast-response-image-media {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .card--fast-response .card--fast-response-content .text-label {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.card--fast-response.phone .card--fast-response-media, .card--fast-response.email .card--fast-response-media {
+  background-color: #fff;
 }
 
 .card--fast-response.whatsapp .card--fast-response-media {

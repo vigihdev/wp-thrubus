@@ -49,8 +49,16 @@ final class FastResponseRenderer extends BaseRenderer implements RendererInterfa
             $itemsHtml[] = $this->renderCardFastResponse($item);
         }
 
+        $content = implode('', $itemsHtml);
+
+        if (empty($this->wrapperOptions)) {
+            return $content;
+        }
+
         return implode('', [
-            implode('', $itemsHtml),
+            Html::openTag('div', $this->wrapperOptions),
+            $content,
+            Html::closeTag('div'),
         ]);
     }
 

@@ -48,3 +48,7 @@ touch contact-info.php
 touch share-it.php
 touch fast-response.php
 ```
+
+```
+_related-post.scss _popular-post.scss _recent-post.scss _random-post.scss
+```

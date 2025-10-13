@@ -3,8 +3,8 @@
 // variables
 
 // variables
-$card--fast-response-width: 40px;
-$card--fast-response-height: 40px;
+$card--fast-response-width: 42px;
+$card--fast-response-height: 42px;
 .card--fast-response {
 }
 .fast-response {
@@ -21,6 +21,11 @@ $card--fast-response-height: 40px;
     @include border-radius(8px);
     padding-top: $getter;
     padding-bottom: $getter;
+    .card--fast-response {
+        @include last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .card--fast-response {
@@ -34,16 +39,18 @@ $card--fast-response-height: 40px;
     @include media-screen-min-max(sm, md) {
     }
     .card--fast-response-media {
-        width: $card--fast-response-width;
-        height: $card--fast-response-height;
+        display: flex;
+        padding: 8px;
+        margin-right: 12px;
+        justify-content: center;
+        align-items: center;
+        @include size(38px);
         @include BoxShadow(2);
         @include border-radius(50%);
-        padding: 6px;
-        margin-right: 12px;
         .fast-response-image-media {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     .card--fast-response-content {
@@ -53,6 +60,14 @@ $card--fast-response-height: 40px;
     }
 }
 
+.card--fast-response {
+    &.phone,
+    &.email {
+        .card--fast-response-media {
+            background-color: #fff;
+        }
+    }
+}
 .card--fast-response.whatsapp {
     .card--fast-response-media {
         background-color: #25d366;

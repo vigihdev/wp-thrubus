@@ -1,0 +1,67 @@
+// random-post.scss style
+
+// variables
+// style
+.card--random-post--vertical {
+}
+.random-post-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include media-screen-min-max(xs, sm) {
+        flex-direction: column;
+    }
+    @include media-screen-min-max(sm, md) {
+        flex-direction: unset;
+    }
+    .card--random-post {
+    }
+}
+.card--random-post {
+    display: flex;
+    margin-bottom: $getter;
+    background-color: #fff;
+    @include elevation(4);
+    @include border-radius(8px);
+    @include media-screen-min-max(xs, sm) {
+        flex-direction: column;
+    }
+    @include media-screen-min-max(sm, md) {
+        flex-direction: column;
+        flex: 0 0 calc((100% / 2) - 16px);
+        margin-right: 16px;
+    }
+    .card--random-post-media {
+        flex: 0 0 140px;
+        @include media-screen-min-max(xs, sm) {
+        }
+        @include media-screen-min-max(sm, md) {
+        }
+        .random-post-image-media {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-left-radius(8px);
+            @include media-screen-min-max(xs, sm) {
+                border-radius: 0;
+                @include border-top-radius(8px);
+            }
+            @include media-screen-min-max(sm, md) {
+                border-radius: 0;
+                @include border-top-radius(8px);
+            }
+        }
+    }
+
+    .card--random-post-content {
+        padding: 16px;
+        .random-post-title {
+            @include poppins-bold;
+            margin-bottom: 8px;
+        }
+
+        .random-post-snippet {
+            font-size: 85%;
+        }
+    }
+}

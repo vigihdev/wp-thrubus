@@ -1,0 +1,67 @@
+// widget-title.scss style
+
+.widget-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &.widget-title-border {
+        padding-bottom: $getter;
+        .widget-title--main {
+            position: absolute;
+            bottom: 8px;
+            width: 60px;
+            border-bottom: 4px solid $secondary;
+        }
+    }
+
+    &.widget-title-background {
+        align-items: center;
+        justify-content: center;
+        .widget-title--main {
+            position: absolute;
+            @include centerXY;
+            border-bottom: 3px solid $secondary;
+            z-index: -1;
+            width: 100%;
+        }
+        .text-label {
+            padding: 8px 16px;
+            @include BoxShadow(1);
+            @include border-radius(4px);
+            color: #fff;
+            background-color: $primary;
+        }
+    }
+
+    &.widget-title-box {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -16px;
+        z-index: 1;
+        .widget-title--main {
+            display: none;
+        }
+        .text-label {
+            padding: 8px 16px;
+            @include BoxShadow(1);
+            @include border-radius(4px);
+            color: #fff;
+            background-color: $primary;
+        }
+    }
+
+    .text-label {
+        @include poppins-medium;
+        text-transform: capitalize;
+        width: max-content;
+    }
+}
+
+// name widget-title
+.widget-title--connect-with-us,
+.widget-title--contact-info {
+    .text-label {
+        color: #fff;
+    }
+}

@@ -2,22 +2,24 @@
 
 declare(strict_types=1);
 
-namespace WpThrubus\Renderers;
+namespace WpThrubus\Renderers\Posts;
 
-use WpThrubus\DTOs\Hero\HeroDestinasiDto;
+use WpThrubus\DTOs\Posts\RelatedPostDto;
+use WpThrubus\Renderers\{BaseRenderer, RendererInterface};
 use Yiisoft\Html\Html;
 
-final class HeroDestinasiRenderer extends BaseRenderer implements RendererInterface
+
+final class RelatedPostRenderer extends BaseRenderer implements RendererInterface
 {
 
     /**
-     * @var HeroDestinasiDto[] $items
+     * @var RelatedPostDto[] $items
      */
     private array $items = [];
 
     protected static function getName(): string
     {
-        return 'hero-destinasi';
+        return 'related-post';
     }
 
     public function setOptions(array $options): self
@@ -28,8 +30,8 @@ final class HeroDestinasiRenderer extends BaseRenderer implements RendererInterf
 
     public function addItem(mixed $item): self
     {
-        if (!$item instanceof HeroDestinasiDto) {
-            throw new \InvalidArgumentException('item expects HeroDestinasiDto');
+        if (!$item instanceof RelatedPostDto) {
+            throw new \InvalidArgumentException('item expects RelatedPostDto');
         }
 
         $this->items[] = $item;
@@ -45,7 +47,7 @@ final class HeroDestinasiRenderer extends BaseRenderer implements RendererInterf
 
         $itemsHtml = [];
         foreach ($this->items as $item) {
-            $itemsHtml[] = $this->renderCardHeroDestinasi($item);
+            $itemsHtml[] = $this->renderCardRelatedPost($item);
         }
 
         $content = implode('', $itemsHtml);
@@ -62,34 +64,39 @@ final class HeroDestinasiRenderer extends BaseRenderer implements RendererInterf
     }
 
 
-    private function renderCardHeroDestinasi(HeroDestinasiDto $heroDestinasi)
+    private function renderCardRelatedPost(RelatedPostDto $related)
     {
         $options = [
-            'class' => parent::getCardName()
+            'class' => parent::getCardName() . ' ripple-effect user-select-none',
+            'onclick' => $this->onclick($related->getActionUrl())
         ];
 
         return implode('', [
             Html::openTag('div', $options),
-            $this->renderMedia($heroDestinasi),
+            $this->renderMedia($related),
+            $this->renderContent($related),
             Html::closeTag('div'),
         ]);
     }
 
-    private function renderMedia(HeroDestinasiDto $heroDestinasi)
+    private function renderMedia(RelatedPostDto $related)
     {
         return implode('', [
             Html::openTag('div', ['class' => parent::getCardMedia()]),
-            Html::img($heroDestinasi->getImageUrl(), $heroDestinasi->getName(), [
+            Html::img($related->getImageUrl(), $related->getTitle(), [
                 'class' => self::getName() . '-image-media'
             ]),
             Html::closeTag('div')
         ]);
     }
 
-    private function renderContent(HeroDestinasiDto $heroDestinasi)
+    private function renderContent(RelatedPostDto $related)
     {
+        $prefix = self::getName();
         return implode('', [
             Html::openTag('div', ['class' => parent::getCardContent()]),
+            Html::div($related->getTitle(), ['class' => "{$prefix}-title"]),
+            Html::div($related->getSnippet(), ['class' => "{$prefix}-snippet"]),
             Html::closeTag('div')
         ]);
     }

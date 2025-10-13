@@ -46,8 +46,16 @@ final class ListPostTypeRenderer extends BaseRenderer implements RendererInterfa
             $itemsHtml[] = $this->renderListPostTypeCard($item);
         }
 
+        $content = implode('', $itemsHtml);
+
+        if (empty($this->wrapperOptions)) {
+            return $content;
+        }
+
         return implode('', [
-            implode('', $itemsHtml),
+            Html::openTag('div', $this->wrapperOptions),
+            $content,
+            Html::closeTag('div'),
         ]);
     }
 

@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace WpThrubus\Renderers;
 
 use WpThrubus\DTOs\ContactInfoDto;
+use Yiisoft\Arrays\ArrayHelper;
 use Yiisoft\Html\Html;
+use Yiisoft\Strings\Inflector;
 
 final class ContactInfoRenderer extends BaseRenderer implements RendererInterface
 {
@@ -48,22 +50,38 @@ final class ContactInfoRenderer extends BaseRenderer implements RendererInterfac
             $itemsHtml[] = $this->renderCardContactInfo($item);
         }
 
+        if (empty($this->wrapperOptions)) {
+            return implode('', [
+                implode('', $itemsHtml),
+            ]);
+        }
+
         return implode('', [
+            Html::openTag('div', $this->wrapperOptions),
             implode('', $itemsHtml),
+            Html::closeTag('div'),
         ]);
     }
 
+    private function inflectorID(string $value)
+    {
+        $inflector = new Inflector();
+        return $inflector->pascalCaseToId($inflector->toPascalCase($value));
+    }
 
     private function renderCardContactInfo(ContactInfoDto $contactInfo)
     {
 
         $options = [
-            'class' => parent::getCardName()
+            'class' => parent::getCardName() . ' ripple-effect user-select-none ' . $this->inflectorID($contactInfo->getContactType()),
+            'onclick' => $this->onclick($contactInfo->getActionUrl())
         ];
+
 
         return implode('', [
             Html::openTag('div', $options),
             $this->renderMedia($contactInfo),
+            $this->renderContent($contactInfo),
             Html::closeTag('div'),
         ]);
     }
@@ -83,6 +101,7 @@ final class ContactInfoRenderer extends BaseRenderer implements RendererInterfac
     {
         return implode('', [
             Html::openTag('div', ['class' => parent::getCardContent()]),
+            Html::div($contactInfo->getContactValue(), ['class' => 'text-label']),
             Html::closeTag('div')
         ]);
     }

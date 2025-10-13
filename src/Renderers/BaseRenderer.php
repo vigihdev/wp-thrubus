@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace WpThrubus\Renderers;
 
+use Yiisoft\Arrays\ArrayHelper;
+use Yiisoft\Html\Html;
+
 abstract class BaseRenderer
 {
     /**
      * @var array<string,mixed> $options
      */
     protected array $options = [];
+
+    protected array $wrapperOptions = [];
 
     abstract protected static function getName(): string;
 
@@ -22,9 +27,28 @@ abstract class BaseRenderer
         ]);
     }
 
+    /**
+     *
+     * @param array $options
+     * @return static
+     */
+    public function withWrapper(array $options = []): self
+    {
+        $class = ArrayHelper::remove($options, 'class');
+        $defaultClass = self::transformWithName('wrapper');
+        $class = is_string($class) ? "{$defaultClass} {$class}" : $defaultClass;
+        $this->wrapperOptions = ArrayHelper::merge($options, ['class' => $class]);
+        return $this;
+    }
+
     protected function onclick(string $url): string
     {
         return "location.href='{$url}'";
+    }
+
+    protected function windowOpen(string $url, string $target = '_blank'): string
+    {
+        return "window.open('{$url}','{$target}');";
     }
 
     protected function getOption(string $name): mixed

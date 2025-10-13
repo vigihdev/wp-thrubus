@@ -59,7 +59,7 @@
   align-items: center;
   justify-content: center;
 }
-.owl-carousel.owl-carousel-root .owl-dots .owl-dot {
+.owl-carousel.owl-carousel-root .owl-dots .owl-dot span {
   background: #b90000;
   width: 16px;
   height: 16px;
@@ -75,7 +75,7 @@
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-.owl-carousel.owl-carousel-root .owl-dots .owl-dot.active {
+.owl-carousel.owl-carousel-root .owl-dots .owl-dot.active span {
   background: #ffce0a;
   border: 3px solid #b90000;
 }

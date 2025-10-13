@@ -47,7 +47,17 @@ final class OwlCarouselRenderer extends BaseRenderer implements RendererInterfac
             return '';
         }
 
-        return $this->renderOwlCarousel($this->item);
+        $content = $this->renderOwlCarousel($this->item);
+
+        if (empty($this->wrapperOptions)) {
+            return $content;
+        }
+
+        return implode('', [
+            Html::openTag('div', $this->wrapperOptions),
+            $content,
+            Html::closeTag('div'),
+        ]);
     }
 
     private function renderOwlCarousel(string $content): string

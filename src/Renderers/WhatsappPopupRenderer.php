@@ -55,10 +55,20 @@ final class WhatsappPopupRenderer extends BaseRenderer implements RendererInterf
             // $itemsHtml[] = $this->renderListPostTypeCard($item);
         }
 
-        return implode('', [
+        $content = implode('', [
             // implode('', $itemsHtml),
             // $this->renderPopupCollapse(),
             $this->renderPopupContent(),
+        ]);
+
+        if (empty($this->wrapperOptions)) {
+            return $content;
+        }
+
+        return implode('', [
+            Html::openTag('div', $this->wrapperOptions),
+            $content,
+            Html::closeTag('div'),
         ]);
     }
 

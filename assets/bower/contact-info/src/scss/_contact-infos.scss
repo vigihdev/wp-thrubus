@@ -2,6 +2,20 @@
 
 // variables
 
+$card--contact-info-width: 36px;
+$card--contact-info-height: 36px;
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: $getter;
+    padding-bottom: $getter;
+    .card--contact-info {
+        @include last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 .card--contact-info {
 }
 .contact-info {
@@ -10,20 +24,62 @@
 .card--contact-info {
     display: flex;
     flex: 0 0 auto;
-    margin-right: 12px;
-    background-color: inherit;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    align-items: center;
     @include media-screen-min-max(xs, sm) {
     }
     @include media-screen-min-max(sm, md) {
     }
     .card--contact-info-media {
+        padding: 8px;
+        margin-right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include size(36px);
+        @include BoxShadow(2);
+        @include border-radius(50%);
         .contact-info-image-media {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     .card--contact-info-content {
+        .text-label {
+            @include poppins-medium;
+        }
     }
 }
+
+.card--contact-info {
+    &.phone,
+    &.email {
+        .card--contact-info-media {
+            background-color: #fff;
+        }
+    }
+}
+.card--contact-info.whatsapp {
+    .card--contact-info-media {
+        background-color: #25d366;
+    }
+}
+
+// Colors
+@each $color, $value in $theme-colors {
+    .contact-info-wrapper.contact-info--#{$color} {
+        .card--contact-info {
+            .card--contact-info-media {
+            }
+            .card--contact-info-content {
+                .text-label {
+                    color: color-yiq($value);
+                }
+            }
+        }
+    }
+}
+
 // .card--contact-info

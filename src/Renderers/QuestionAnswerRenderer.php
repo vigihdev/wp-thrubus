@@ -48,12 +48,22 @@ final class QuestionAnswerRenderer extends BaseRenderer implements RendererInter
             $itemsHtml[] = $this->renderQuestionAnswerCard($item, $i);
         }
 
-        return implode('', [
+        $content = implode('', [
             Html::openTag('div', [
                 'class' => parent::transformWithName('root'),
                 'id' => $this->getOption('id')
             ]),
             implode('', $itemsHtml),
+            Html::closeTag('div'),
+        ]);
+
+        if (empty($this->wrapperOptions)) {
+            return $content;
+        }
+
+        return implode('', [
+            Html::openTag('div', $this->wrapperOptions),
+            $content,
             Html::closeTag('div'),
         ]);
     }
