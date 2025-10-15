@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "contactValue": "0821 3131 000 76",
+      "contactType": "whatsapp",
+      "iconUrl": "/images/fast-response/whatsapp.png",
+      "actionUrl": "https://wa.me/6282131310076?text=Hallo%20Word"
+    },
+    {
+      "contactValue": "0821 3131 000 76",
+      "contactType": "whatsapp",
+      "iconUrl": "/images/fast-response/whatsapp.png",
+      "actionUrl": "https://wa.me/6282131310076?text=Hallo%20Word"
+    },
+    {
+      "contactValue": "email@gmail.com",
+      "contactType": "email",
+      "iconUrl": "/images/fast-response/email.png",
+      "actionUrl": "mailto:email@gmail.com"
+    },
+    {
+      "contactValue": "0821 3131 000 76",
+      "contactType": "phone",
+      "iconUrl": "/images/fast-response/phone.png",
+      "actionUrl": "tel:+6282131310076"
+    }
+  ]
+}
