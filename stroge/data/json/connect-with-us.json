@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Facebook",
+        "iconUrl": "http://localhost:3378/site/assets/images/sosmed/facebook.png",
+        "actionUrl": "https://www.facebook.com/okkatransid"
+    },
+    {
+        "name": "Twitter",
+        "iconUrl": "http://localhost:3378/site/assets/images/sosmed/twitter.png",
+        "actionUrl": "https://x.com/okkarentid"
+    },
+    {
+        "name": "Instagram",
+        "iconUrl": "http://localhost:3378/site/assets/images/sosmed/instagram.png",
+        "actionUrl": "https://www.instagram.com/okkarent.id"
+    },
+    {
+        "name": "Tiktok",
+        "iconUrl": "http://localhost:3378/site/assets/images/sosmed/tiktok.png",
+        "actionUrl": "https://www.tiktok.com/@okkarent_official"
+    },
+    {
+        "name": "Whatsapp",
+        "iconUrl": "http://localhost:3378/site/assets/images/sosmed/whatsapp.png",
+        "actionUrl": ""
+    }
+]

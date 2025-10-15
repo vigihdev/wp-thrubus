@@ -1,0 +1,61 @@
+// connect-with-us.scss
+
+// variables
+$card--connect-with-us-width: 36px;
+$card--connect-with-us-height: 36px;
+
+.connect-with-us-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card--connect-with-us {
+    &.facebook {
+        background-color: #1877f2;
+    }
+    &.twitter {
+        background-color: #1da1f2;
+    }
+    &.instagram {
+        background-color: #f00073;
+    }
+    &.pinterest {
+        background-color: #e60023;
+    }
+    &.whatsapp {
+        background-color: #25d366;
+    }
+}
+.card--connect-with-us {
+    width: $card--connect-with-us-width;
+    height: $card--connect-with-us-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    @include BoxShadow(1);
+    @include border-radius(4px);
+    @include transitions(border, 0.5s);
+    @include hover {
+        border: 3px solid $secondary;
+    }
+
+    .card--connect-with-us-media {
+        .connect-with-us-image-media {
+        }
+    }
+    .card--connect-with-us-content {
+    }
+}
+
+// theme
+.connect-with-us-wrapper {
+    &.connect-with-us-circle {
+        .card--connect-with-us {
+            @include border-radius(50%);
+        }
+    }
+    &.connect-with-us-box {
+    }
+}
