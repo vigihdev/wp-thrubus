@@ -15,11 +15,11 @@ $owl-dot-width: 16px;
     }
     @include media-screen-min-max(sm, md) {
     }
+
     .owl-stage-outer {
     }
 
     .owl-nav {
-        // width: calc(100% - 20px);
         .owl-prev,
         .owl-next {
             position: absolute;
@@ -38,7 +38,8 @@ $owl-dot-width: 16px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: #666;
+                color: #fff;
+                font-weight: bold;
                 @include transitions(color, 0.3s);
             }
 
@@ -69,12 +70,11 @@ $owl-dot-width: 16px;
         .owl-dot {
             span {
                 background: $primary;
+                margin: 4px;
                 @include size($owl-dot-width);
                 @include BoxShadow(2);
                 @include border-radius(50%);
-                margin: 4px;
-                @include transitions(border, 0.3s);
-                @include transitions(background, 0.3s);
+                @include transitions(all, 0.5s);
             }
             &.active {
                 span {
