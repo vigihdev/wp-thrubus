@@ -205,3 +205,21 @@
 .widget-title--contact-info .text-label {
   color: #fff;
 }
+
+.card--about-us {
+  display: flex;
+  flex-direction: column;
+}
+.card--about-us .card--about-us-media {
+  margin-bottom: 12px;
+}
+.card--about-us .card--about-us-media .about-us-image-media {
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+.card--about-us .card--about-us-content .text-description {
+  color: #e1e1e1;
+  font-size: 90%;
+}

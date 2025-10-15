@@ -1,0 +1,24 @@
+// about-us.scss style
+
+// variables
+// style
+.card--about-us {
+    display: flex;
+    flex-direction: column;
+    .card--about-us-media {
+        margin-bottom: 12px;
+        .about-us-image-media {
+            padding: 12px;
+            background-color: #fff;
+            @include elevation(4);
+            @include border-radius(8px);
+        }
+    }
+
+    .card--about-us-content {
+        .text-description {
+            color: #e1e1e1;
+            font-size: 90%;
+        }
+    }
+}

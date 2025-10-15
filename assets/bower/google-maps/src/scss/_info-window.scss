@@ -1,0 +1,66 @@
+// info-window.scss style
+
+// variables
+$card--info-window-width: 240px;
+
+.card--info-window {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: $card--info-window-width;
+    @include border-radius(8px);
+    @include media-screen-min-max(xs, sm) {
+    }
+    @include media-screen-min-max(sm, md) {
+    }
+    .card--info-window-title {
+        padding-bottom: 12px;
+        .text-label {
+            @include poppins-bold;
+            font-size: 1.1em;
+        }
+    }
+    .card--info-window-media {
+        .info-window-image-media {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card--info-window-content {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+
+        .rating-number,
+        .rating-group,
+        .jumlah-ulasan .ulasan-number {
+            margin-right: 4px;
+        }
+
+        .rating-number {
+            display: flex;
+            .text-content {
+                @include poppins-bold;
+            }
+        }
+        .rating-group {
+            .rating-star {
+                display: flex;
+                align-items: center;
+                .material-icons-outlined {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        .jumlah-ulasan {
+            .ulasan-number {
+                @include poppins-bold;
+            }
+            .ulasan-text {
+            }
+        }
+    }
+}
