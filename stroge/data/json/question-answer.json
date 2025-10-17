@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Berapa lama waktu sewa minimum untuk mobil?",
+        "answers": [
+            "Minimum sewa 12 jam untuk paket harian",
+            "Bisa sewa per jam mulai dari 3 jam",
+            "Fleksibel sesuai kebutuhan, minimal 6 jam"
+        ]
+    },
+    {
+        "question": "Apakah sudah termasuk bensin?",
+        "answers": [
+            "Ya, sudah termasuk BBM untuk paket Driver",
+            "Bensin ditanggung penyewa untuk paket Lepas Kunci",
+            "Tergantung paket yang dipilih, ada yang include ada yang tidak"
+        ]
+    },
+    {
+        "question": "Bagaimana cara booking mobil?",
+        "answers": [
+            "Bisa booking via WhatsApp atau telepon langsung",
+            "Melalui website dengan mengisi form booking",
+            "Datang langsung ke kantor untuk booking offline"
+        ]
+    },
+    {
+        "question": "Apakah ada jaminan atau deposit?",
+        "answers": [
+            "Deposit Rp 500.000 untuk paket Lepas Kunci",
+            "KTP asli sebagai jaminan untuk semua paket",
+            "Tidak ada deposit untuk paket dengan Driver"
+        ]
+    },
+    {
+        "question": "Area mana saja yang bisa dilayani?",
+        "answers": [
+            "Melayani seluruh area Blitar dan sekitarnya",
+            "Bisa antar jemput dalam radius 50km",
+            "Khusus area Blitar Kota dan Kabupaten Blitar"
+        ]
+    },
+    {
+        "question": "Apakah driver berpengalaman?",
+        "answers": [
+            "Semua driver sudah berpengalaman lebih dari 5 tahun",
+            "Driver profesional dan menguasai rute Blitar",
+            "Tim driver terlatih dan berlisensi resmi"
+        ]
+    },
+    {
+        "question": "Bagaimana jika terjadi kerusakan di jalan?",
+        "answers": [
+            "Ada asuransi kendaraan dan roadside assistance",
+            "Tim teknis siaga 24 jam untuk emergency",
+            "Ganti mobil backup jika kerusakan parah"
+        ]
+    },
+    {
+        "question": "Apakah bisa sewa untuk keluar kota?",
+        "answers": [
+            "Bisa ke seluruh Jawa Timur dengan biaya tambahan",
+            "Khusus area Blitar dan sekitar saja",
+            "Luar kota bisa dengan perjanjian khusus"
+        ]
+    },
+    {
+        "question": "Berapa kapasitas penumpang maksimal?",
+        "answers": [
+            "Avanza dan Xenia muat 7 orang dewasa",
+            "Calya dan Sigra muat 5-6 orang",
+            "Sesuai spesifikasi masing-masing kendaraan"
+        ]
+    },
+    {
+        "question": "Apakah ada diskon untuk sewa jangka panjang?",
+        "answers": [
+            "Diskon 10% untuk sewa lebih dari 7 hari",
+            "Paket bulanan lebih hemat daripada harian",
+            "Ada promo khusus untuk pelanggan setia"
+        ]
+    }
+]
