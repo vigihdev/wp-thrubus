@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Bali",
+        "imageUrl": "/images/destinasi/bali.png"
+    },
+    {
+        "name": "Bandung",
+        "imageUrl": "/images/destinasi/bandung.png"
+    },
+    {
+        "name": "Banyuwangi",
+        "imageUrl": "/images/destinasi/banyuwangi.png"
+    },
+    {
+        "name": "Batu",
+        "imageUrl": "/images/destinasi/batu.png"
+    },
+    {
+        "name": "Dieng",
+        "imageUrl": "/images/destinasi/dieng.png"
+    },
+    {
+        "name": "Jogja",
+        "imageUrl": "/images/destinasi/jogja.png"
+    },
+    {
+        "name": "Karimunjawa",
+        "imageUrl": "/images/destinasi/karimunjawa.png"
+    },
+    {
+        "name": "Malang",
+        "imageUrl": "/images/destinasi/malang.png"
+    }
+]

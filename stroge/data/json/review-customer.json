@@ -1,0 +1,92 @@
+[
+    {
+        "username": "vigih",
+        "rating": "4.5",
+        "imageUrl": "/images/user-avatar/user-1.jpg",
+        "reviewText": "Pelayanan nya oke banget, driver ramah dan profesional. Mobil bersih dan terawat."
+    },
+    {
+        "username": "Sari Dewi",
+        "rating": "5.0",
+        "imageUrl": "/images/user-avatar/user-2.jpg",
+        "reviewText": "Sangat puas dengan layanan rental ini! Proses booking mudah, mobil kondisi prima, driver berpengalaman."
+    },
+    {
+        "username": "Ahmad Rizki",
+        "rating": "4.8",
+        "imageUrl": "/images/user-avatar/user-3.jpg",
+        "reviewText": "Top banget pelayanannya! Mobil datang tepat waktu, interior bersih, AC dingin. Recommended!"
+    },
+    {
+        "username": "Intan Permata",
+        "rating": "4.7",
+        "imageUrl": "/images/user-avatar/user-4.jpg",
+        "reviewText": "Driver sangat menguasai jalan di Blitar, aman dan nyaman perjalanannya. Harga juga reasonable."
+    },
+    {
+        "username": "Budi Santoso",
+        "rating": "4.9",
+        "imageUrl": "/images/user-avatar/user-5.jpg",
+        "reviewText": "Excellent service! Mobil terawat dengan baik, driver sopan dan helpful. Pasti akan sewa lagi."
+    },
+    {
+        "username": "Maya Sari",
+        "rating": "4.6",
+        "imageUrl": "/images/user-avatar/user-6.jpg",
+        "reviewText": "Pelayanan ramah, mobil bersih dan wangi. Cocok untuk keluarga, ada car seat juga tersedia."
+    },
+    {
+        "username": "Dian Pratama",
+        "rating": "4.4",
+        "imageUrl": "/images/user-avatar/user-7.jpg",
+        "reviewText": "Good experience! Booking via WhatsApp mudah, respond cepat. Mobil sesuai dengan foto."
+    },
+    {
+        "username": "Rini Handayani",
+        "rating": "5.0",
+        "imageUrl": "/images/user-avatar/user-8.jpg",
+        "reviewText": "Perfect! Driver datang tepat waktu, mobil kondisi excellent. Perjalanan wisata jadi lebih nyaman."
+    },
+    {
+        "username": "Eko Prasetyo",
+        "rating": "4.3",
+        "imageUrl": "/images/user-avatar/user-9.jpg",
+        "reviewText": "Harga kompetitif, mobil terawat. Driver friendly dan tau tempat-tempat wisata di Blitar."
+    },
+    {
+        "username": "Lestari Wulan",
+        "rating": "4.8",
+        "imageUrl": "/images/user-avatar/user-10.jpg",
+        "reviewText": "Sangat memuaskan! Mobil bersih, ber-AC, driver profesional. Worth it banget untuk family trip."
+    },
+    {
+        "username": "Hendro Wijaya",
+        "rating": "4.7",
+        "imageUrl": "/images/user-avatar/user-11.jpg",
+        "reviewText": "Service bagus, driver berpengalaman dan sabar. Mobil nyaman untuk perjalanan jauh."
+    },
+    {
+        "username": "Fitri Ayu",
+        "rating": "4.5",
+        "imageUrl": "/images/user-avatar/user-12.jpg",
+        "reviewText": "Recommended! Proses sewa mudah, mobil terawat baik, driver ramah dan informatif."
+    },
+    {
+        "username": "Agus Setiawan",
+        "rating": "4.9",
+        "imageUrl": "/images/user-avatar/user-13.jpg",
+        "reviewText": "Pelayanan prima! Mobil selalu dalam kondisi prima, driver punctual dan professional."
+    },
+    {
+        "username": "Nurul Fadilah",
+        "rating": "4.6",
+        "imageUrl": "/images/user-avatar/user-14.jpg",
+        "reviewText": "Great experience! Driver helpful banget, kasih rekomendasi tempat makan enak di Blitar."
+    },
+    {
+        "username": "Rizal Mahendra",
+        "rating": "4.4",
+        "imageUrl": "/images/user-avatar/user-15.jpg",
+        "reviewText": "Solid service! Mobil bersih dan nyaman, harga fair. Cocok untuk business trip maupun leisure."
+    }
+]
